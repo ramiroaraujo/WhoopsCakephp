@@ -22,7 +22,7 @@ php composer.phar require oldskool/whoops-cakephp:~2.0
 Configuration
 -------------
 
-In order to start using Whoops as your error handler, you'll need to adjust your `config/app.php` file and have it load the Plugin.
+In order to start using Whoops as your error handler, you'll need to adjust your `config/bootstrap.php` file and have it load the Plugin.
 
 Find this bit of code:
 
