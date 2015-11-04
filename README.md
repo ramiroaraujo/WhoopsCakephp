@@ -1,6 +1,10 @@
 WhoopsCakephp
 =============
 
+[![Latest Stable Version](https://poser.pugx.org/oldskool/whoops-cakephp/v/stable)](https://packagist.org/packages/oldskool/whoops-cakephp)
+[![Total Downloads](https://poser.pugx.org/oldskool/whoops-cakephp/downloads)](https://packagist.org/packages/oldskool/whoops-cakephp)
+[![License](https://poser.pugx.org/oldskool/whoops-cakephp/license)](https://packagist.org/packages/oldskool/whoops-cakephp)
+
 This plugin integrates the Whoops library into your CakePHP application.
 
 Requirements
