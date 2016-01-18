@@ -4,14 +4,11 @@
 	"description": "Integrates the Whoops library into a CakePHP application",
 	"homepage": "https://github.com/oldskool/WhoopsCakephp",
 	"license": "MIT",
-	"version": "2.0.0",
+	"version": "2.0.3",
 	"require": {
 		"composer/installers": "*",
 		"cakephp/cakephp": "~3.0",
-		"filp/whoops": "1.*"
-	},
-	"extra": {
-		"installer-name": "WhoopsCakephp"
+		"filp/whoops": "~2.0"
 	},
 	"autoload": {
 		"psr-4": {
