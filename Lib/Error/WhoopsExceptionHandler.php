@@ -49,7 +49,7 @@ class WhoopsExceptionHandler {
 			$handlerName = 'PrettyPageHandler';
 
 			// If ajax request, use the JsonResponseHandler. Revert to PrettyPageHandler for all other requests.
-			if ($request && $request->is('ajax')) {
+			if ($request instanceof CakeRequest && $request->is('ajax')) {
 				$handlerName = 'JsonResponseHandler';
 			}
 
