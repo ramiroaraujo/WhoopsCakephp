@@ -45,8 +45,14 @@ class WhoopsErrorHandler {
 		if (Configure::read('debug') >= self::$minDebugLevel) {
 			// Debug level is high enough, use the Whoops handler
 			
+			$request = Router::getRequest(true);
+			$handlerName = 'PrettyPageHandler';
+
 			// If ajax request, use the JsonResponseHandler. Revert to PrettyPageHandler for all other requests.
-			$handlerName = (Router::getRequest(true)->is('ajax')) ? 'JsonResponseHandler' : 'PrettyPageHandler';
+			if ($request instanceof CakeRequest && $request->is('ajax')) {
+				$handlerName = 'JsonResponseHandler';
+			}
+
 			$namespacePath = "\\Whoops\\Handler\\{$handlerName}";
 
 			$Whoops = new Whoops\Run();
